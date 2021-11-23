@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="with=device-widt",initial-scale=1.0>
+    <link rel="stylesheet" href="{{ url_for('static',filename='reg.css') }}">
+    <title>Registration</title>
+
+    </head>
+    <body>
+      <form method="POST">
+      <div class="container"></div>
+      <h1>Register</h1>
+      <p>Fill up to proceed.</p>
+      <hr>
+
+      <label for="firstname"><b>Firstname</b></label>
+      <input type="text" placeholder="Enter Firstname" name="firstname" id="firstname" required>
+
+      <label for="lastname"><b>Lastname</b></label>
+      <input type="text" placeholder="Enter Lastname" name="lastname" id="lastname" required>
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" id="username" required>
+      
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      <hr>
+      <button type="submit" class="registerbtn">Register</button>
+
+      
+    </div>
+    </form>
+    <form action="/" method="POST">
+    <div class="container signin">
+      <p>Already have an account? <a href="{{ url_for('login') }}">Sign in</a>.</p>
+    </div>
+
+
+    </form>
+
+  </body>
+</html>
